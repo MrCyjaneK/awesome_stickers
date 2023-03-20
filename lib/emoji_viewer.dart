@@ -5,23 +5,23 @@ import 'package:flutter/material.dart';
 /// EmojiViewer - Way to view all supported
 /// types of emojis.
 class EmojiViewer extends StatelessWidget {
-  EmojiViewer({
-    Key? key,
+  const EmojiViewer({
+    super.key,
     required this.size,
     required this.emojiData,
     required this.emojiType,
-  }) : super(key: key);
+  });
 
-  double size = 16;
-  Uint8List emojiData;
-  String emojiType;
+  final double size;
+  final Uint8List emojiData;
+  final String emojiType; // this can only by image for now
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: size,
       height: size,
-      child: const Text("test"),
+      child: Image.memory(emojiData),
     );
   }
 }

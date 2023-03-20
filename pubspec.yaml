@@ -1,5 +1,5 @@
 name: awesome_stickers
-description: A new Flutter package project.
+description: Flutter package for picking stickers :D.
 version: 0.0.1
 homepage:
 
@@ -8,6 +8,7 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  flat_buffers: ^2.0.5
   flutter:
     sdk: flutter
   http: ^0.13.5

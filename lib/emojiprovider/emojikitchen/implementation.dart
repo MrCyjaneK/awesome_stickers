@@ -76,7 +76,6 @@ class EmojiKitchenEmojiPack implements EmojiPack {
 
   @override
   List<Emoji> search(String query) {
-    print(query);
     final newEmojis1 =
         emojiKitchenEmojiList.take(emojiKitchenEmojiList.length).toList();
     final newEmojis2 =

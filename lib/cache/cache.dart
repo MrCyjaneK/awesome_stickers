@@ -10,8 +10,6 @@ Future<void> prepareCache() async {
   final docsDir = await getApplicationSupportDirectory();
   // Future<Store> openStore() {...} is defined in the generated objectbox.g.dart
   store = await openStore(directory: "${docsDir.path}/awesome-emoji-cache");
-  print(
-      "[awesome-emoji] cache loaded at: '${docsDir.path}/awesome-emoji-cache'");
   isCacheLoaded = true;
 }
 
@@ -30,8 +28,6 @@ class Cache {
 
   static Future<Cache> cacheUrl(String url) async {
     if (!isCacheLoaded) {
-      print("!!! AwesomeStickers cache is not loaded");
-      print("!!! add `await prepareCache() to your main()`");
       return Cache(key: url, byteList: await http.readBytes(Uri.parse(url)));
     }
     final qres = cacheBox.query(Cache_.key.equals(url)).build().findFirst();
