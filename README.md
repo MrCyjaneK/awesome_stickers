@@ -1,5 +1,7 @@
 AwesomeStickers - simple and easy to use stickers menu!
 
+![LOGO](https://github.com/MrCyjaneK/awesome_stickers/blob/master/logo.png)
+
 ## Features
 
  - [x] Selecting stickers :D
@@ -8,6 +10,8 @@ AwesomeStickers - simple and easy to use stickers menu!
    - [x] Emoji Kitchen (all emojis supported by GBoard, thanks to emojikitchen.dev)
    - [ ] Noto animated emoji (soon)
    - [ ] Custom packs?
+
+[Watch the plugin in action!](https://github.com/MrCyjaneK/awesome_stickers/blob/master/example/example.mp4?raw=true)
 
 ## Getting started
 
